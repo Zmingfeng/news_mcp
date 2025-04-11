@@ -1,0 +1,23 @@
+[project]
+name = "news-mcp"
+version = "0.1.0"
+description = "一个基于MCP协议的新闻获取工具"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "MCP新闻工具开发者" }
+]
+
+dependencies = [
+    "httpx>=0.24.1",
+    "beautifulsoup4>=4.12.2",
+    "mcp>=1.2.0",
+]
+
+[project.scripts]
+news-mcp = "news_mcp.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 
